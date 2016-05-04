@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import org.tbee.javafx.scene.layout.fxml.MigPane?>
+<?import layouttests.migfxml.sample1.*?>
+
+<MigPane id="rootPane" fx:controller="test.controller.HelloController"
+         styleClass="main-panel"
+         layout="insets 20"
+         cols="[label, pref!][grow, 50::]"
+         rows=""
+         xmlns:fx="http://javafx.com/fxml">
+
+    <Label text="User Name:"/>
+    <TextField fx:id="username" prefColumnCount="30" MigPane.cc="growx, wrap"/>
+
+</MigPane>
